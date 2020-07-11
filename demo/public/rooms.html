@@ -1,0 +1,117 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>VN TRAVEL BOOKING</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+		<script type="text/javascript" src="js/JFCore.js"></script>
+		<script type="text/javascript" src="js/JFForms.js"></script>
+		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+				})();
+		</script>
+<!--nav-->
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""></a>
+		</div>
+		<div class="h_right">
+			<!--start menu -->
+			<ul class="menu">
+				<li><a href="index.html">khách sạn</a></li> |
+				<li class="active"><a href="rooms.html">phòng</a></li> |
+				<li><a href="reservation.html">đặt phòng</a></li> |
+				<li><a href="contact.html">liên lạc</a></li>
+				<div class="clear"></div>
+			</ul>			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+<!--start main -->
+<div class="main_bg">
+<div class="wrap">
+	<div class="main">
+		<div class="content">
+			<div class="room">
+				<h4>phòng hướng biển</h4>
+				<p class="para">Vị trí phòng có ban công hướng ra biển.</p>
+			</div>
+				<div class="grids_of_2">
+					<div class="grids_of_img">
+						<img src="images/pic4.jpg" alt=""/>
+					</div>
+					<div class="grids_of_para">
+						<h4>
+							MELODY RESORTS
+						</h4>
+						<p class="para">MELODY RESORTS nằm trên bãi biển có dài cát trắng tinh. Mỗi khu nhà đều có ban công hướng ra biển có thể đón bình minh, mặt đối diện củng có ban công để ngắm hoàng hôn.</p>
+					</div>
+					<div class="clear"></div>					
+				</div>
+				<div class="grids_of_2">
+					<div class="grids_of_img">
+						<img src="images/pic5.jpg" alt=""/>
+					</div>
+					<div class="grids_of_para">
+						<h4>
+							ALIBABA HOTEL
+						</h4>
+						<p class="para">ALIBAB HOTEL là khách sạn có kiến trúc ai cập mang sự cổ kinh và sang trọng. Khu khách sạn có 34 tầng mặt trước hướng vào trung tâm thành phố, mặt sau hướng ra bãi biển.</p>
+					</div>
+					<div class="clear"></div>					
+				</div>						
+
+		</div>
+
+		
+		<div class="booking_room">
+			 <a href="reservation.html"><h4>Đặt Ngay</h4></a>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>		
+
+</body>
+</html>
