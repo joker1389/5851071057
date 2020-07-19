@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="%PUBLIC_URL%/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    
+    
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/fwslider.css" media="all">
+
+    <link type="text/css" rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.min.css">
+
+
+
+
+
+
+    <title>VN TRAVEL BOOKING</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+      <script src="%PUBLIC_URL%/js/jquery.min.js"></script>
+      <script src="%PUBLIC_URL%/js/jquery-ui.min.js"></script>
+      <script src="%PUBLIC_URL%/js/fwslider.js"></script>
+      <script src="%PUBLIC_URL%/js/jquery-ui.js"></script>
+      
+      
+      <script type="text/javascript" src="%PUBLIC_URL%/js/JFCore.js"></script>
+
+      <script type="text/javascript" src="%PUBLIC_URL%/js/jquery-3.5.1.min.js"></script>
+
+
+      <script src="%PUBLIC_URL%/js/jquery-ui.js"></script>
+      
+
+      
+
+    <script>
+    $(function() {
+      var pull    = $('#pull');
+        menu    = $('nav ul');
+        menuHeight  = menu.height();
+
+      $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+
+      $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+        });
+    });
+</script>
+
+
+  </body>
+</html>
